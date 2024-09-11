@@ -2,7 +2,7 @@
   "name": "rol-dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aritzsilva98.github.io/Golden-Soul",
+  "homepage": "https://golden-soul.vercel.app/Golden-Soul",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
