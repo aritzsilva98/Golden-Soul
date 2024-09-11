@@ -8,3 +8,5 @@ export const eggs = [
     hint: 'ᛚᛅ ᛏᛟᚱᚱᛖ ᛞᛖ ᛗᛅᚱᚠᛁᛚ ᛖᛋᛏᛅ ᛖᚾ ᚢᚾ ᛚᚢᚷᛅᚱ ᚠᛁᛃᛟ, ᛈᛖᚱᛟ ᛏᛁᛖᚾᛖ ᛖᚾᛏᚱᛅᛞᛅᛋ ᛞᛖᛋᛏᛖ ᛏᛟᛞᛅᛋ ᛈᛅᚱᛏᛖᛋ.'
   }
 ]
+
+// If you are here and want to play a little and find out what these letters mean, the hint is ᛋᛖᚲᚱᛖᛏᛟᛋ = Secretos
