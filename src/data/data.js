@@ -1,7 +1,7 @@
 export const sections = [
     { id: 'characters', title: 'Personajes', icon: '🧙‍♂️' },
     { id: 'history', title: 'Historia', icon: '📜' },
-    { id: 'items', title: 'Objetos Relevantes', icon: '🗡️' },
+    { id: 'items', title: 'Objetos', icon: '🗡️' },
     { id: 'locations', title: 'Lugares', icon: '🏰' },
     { id: 'references', title: 'Material', icon: '📚' },
     { id: 'easterEggs', title: 'ᛋᛖᚲᚱᛖᛏᛟᛋ', icon: '' },
