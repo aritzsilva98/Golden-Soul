@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/static/:path*",
+      "destination": "/static/:path*",
+      "permanent": true
+    }
+  ]
+}

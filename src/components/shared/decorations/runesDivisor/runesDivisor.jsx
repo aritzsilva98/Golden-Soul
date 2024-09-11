@@ -1,4 +1,3 @@
-import './runesStyle.css'
 import { runes } from '../../../../data/data'
 
 const RuneDivisor = () => {
