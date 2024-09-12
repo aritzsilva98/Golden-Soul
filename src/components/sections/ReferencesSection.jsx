@@ -2,7 +2,7 @@ import { references } from '../../data/referencesData'
 
 const ReferencesSection = () => {
   return (
-    <section className='references-section'>
+    <section className='references-section pl-4'>
       {references && references.length > 0 ? (
         <>
           <h2 className='text-4xl font-bold mb-4'>Referencias</h2>
@@ -11,7 +11,7 @@ const ReferencesSection = () => {
               <li key={ref.title} className='pb-8'>
                 <strong>{ref.title}</strong> por {ref.author}
                 <p className='mt-2 text-sm text-gray-700 italic'>
-                  "{ref.snippet}"
+                  {ref.snippet}
                 </p>
               </li>
             ))}

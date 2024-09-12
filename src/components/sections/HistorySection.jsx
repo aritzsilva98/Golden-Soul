@@ -2,7 +2,7 @@ import { timeline } from '../../data/historyData.js'
 
 const HistorySection = () => {
   return (
-    <section className='history-section'>
+    <section className='history-section pl-4'>
       {(timeline && timeline.length > 0) ? (
         <>
           <h2 className='text-4xl font-bold mb-4'>Historia</h2>

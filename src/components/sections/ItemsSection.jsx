@@ -3,7 +3,7 @@ import { items } from '../../data/itemsData.js'
 
 const ItemsSection = () => {
   return (
-    <section className='items-section'>
+    <section className='items-section pl-4'>
       {items && items.length > 0 ? (
         <>
           <h2 className='text-4xl font-bold mb-4'>Objetos importantes</h2>

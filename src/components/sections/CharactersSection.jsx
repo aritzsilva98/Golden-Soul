@@ -4,7 +4,7 @@ import RunesDivisor from '../shared/decorations/runesDivisor/runesDivisor'
 
 const CharactersSection = () => {
   return (
-    <section className='characters-section'>
+    <section className='characters-section pl-4'>
       {myCharacters && myCharacters.length > 0 && (
         <>
           <h2 className='text-4xl font-bold mb-4'>Personajes Jugadores</h2>

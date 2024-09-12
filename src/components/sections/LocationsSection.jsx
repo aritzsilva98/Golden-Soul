@@ -3,7 +3,7 @@ import { locations } from '../../data/locationsData'
 
 const LocationsSection = () => {
   return (
-    <section className='locations-section'>
+    <section className='locations-section pl-4'>
       {locations && locations.length > 0 ? (
         <>
           <h2 className='text-4xl font-bold mb-4'>Localizaciones</h2>

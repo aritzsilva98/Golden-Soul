@@ -3,7 +3,7 @@ import { eggs } from '../../data/eggData.js'
 
 const EasterEggsSection = () => {
   return (
-    <section className='characters-section'>
+    <section className='eggs-section pl-4'>
       <>
         <h2 className='text-4xl font-bold mb-4'>ᛋᛖᚲᚱᛖᛏᛟᛋ</h2>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8 pb-4'>

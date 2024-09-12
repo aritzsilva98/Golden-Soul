@@ -19,7 +19,8 @@ export const references = [
   },
   {
     title: 'Book of Tales (2022).',
-    author: 'Cody Pondsmith y Tomasz Z. Majkowski, con contribuciones de James Hutt y J Gray.',
+    author:
+      'Cody Pondsmith y Tomasz Z. Majkowski, con contribuciones de James Hutt y J Gray.',
     snippet:
       '“Este suplemento ofrece una serie de aventuras y módulos preparados, listas para jugar. Es una excelente opción para los directores de juego que buscan historias preescritas con las que expandir sus campañas.”'
   },
