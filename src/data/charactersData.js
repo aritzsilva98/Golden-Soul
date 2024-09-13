@@ -1,8 +1,8 @@
 export const myCharacters = [
   {
-    name: 'Desconocido',
-    role: 'Desconocido',
-    description: 'Ningún dato por ahora',
+    name: 'Fenn Verris',
+    role: 'Bardo',
+    description: ' Juglar errante, cuya figura enigmática se oculta tras una máscara blanca de porcelana y anchos ropajes que cubren su identidad. Viaja de pueblo en pueblo, ganando fama y fortuna con sus magníficas actuaciones, donde su música y relatos hechizan a multitudes. Pero más allá del brillo de los escenarios, una pregunta persiste en quienes lo conocen de cerca: ¿hay un propósito oculto detrás de su constante peregrinaje? Mientras continúa su vida como un artista célebre, muchos se preguntan si su destino está ligado a algo más profundo que la simple búsqueda de aplausos y monedas.',
     title: ''
   },
   {
