@@ -4,16 +4,16 @@ import RunesDivisor from '../shared/decorations/runesDivisor/runesDivisor'
 
 const CharactersSection = () => {
   return (
-    <section className='characters-section pl-4'>
+    <section className='characters-section pl-4 '>
       {myCharacters && myCharacters.length > 0 && (
-        <>
+        <div className = 'bg-amber-50 border-2 border-amber-700 rounded-lg p-6 shadow-lg mb-8'>
           <h2 className='text-4xl font-bold mb-4'>Personajes Jugadores</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 pb-4'>
             {myCharacters.map(character => (
               <CharacterItem key={character.name} character={character} />
             ))}
           </div>
-        </>
+        </div>
       )}
 
       {myCharacters &&
@@ -22,14 +22,14 @@ const CharactersSection = () => {
         characters.length > 0 && <RunesDivisor />}
 
       {characters && characters.length > 0 && (
-        <>
+        <div className = 'bg-amber-50 border-2 border-amber-700 rounded-lg p-6 shadow-lg mb-8'>
           <h2 className='text-4xl font-bold mb-4'>Personajes No Jugadores</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 pb-4'>
             {characters.map(character => (
               <CharacterItem key={character.name} character={character} />
             ))}
           </div>
-        </>
+        </div>
       )}
 
       {(!myCharacters || myCharacters.length === 0) &&

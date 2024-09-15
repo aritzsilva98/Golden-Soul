@@ -10,7 +10,9 @@ import ItemsSection from './sections/ItemsSection'
 import LocationsSection from './sections/LocationsSection'
 import ReferencesSection from './sections/ReferencesSection'
 import EasterEggsSection from './sections/EasterEggsSection'
+import MapSection from './sections/MapSection';
 import { Loader } from './shared/decorations/loader/loader'
+
 
 function Main () {
   const [activeSection, setActiveSection] = useState('characters')
@@ -148,6 +150,7 @@ function Main () {
               {activeSection === 'locations' && <LocationsSection />}
               {activeSection === 'references' && <ReferencesSection />}
               {activeSection === 'easterEggs' && <EasterEggsSection />}
+              {activeSection === 'map' && <MapSection />}
               
               {!validSections.includes(activeSection) && <Loader />}
             </motion.div>

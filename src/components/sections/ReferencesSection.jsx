@@ -2,7 +2,7 @@ import { references } from '../../data/referencesData'
 
 const ReferencesSection = () => {
   return (
-    <section className='references-section pl-4'>
+    <section className='references-section pl-4 bg-amber-50 border-2 border-amber-700 rounded-lg p-6 shadow-lg mb-8'>
       {references && references.length > 0 ? (
         <>
           <h2 className='text-4xl font-bold mb-4'>Referencias</h2>
