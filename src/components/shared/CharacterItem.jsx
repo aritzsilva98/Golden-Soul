@@ -1,16 +1,22 @@
 import { formatTextWithLineBreaks } from '../../utils/textUtils'
 
 const CharacterItem = ({ character }) => {
+  const hasTitle = Boolean(character.title); // Evaluar si el personaje tiene título
 
-  const haveTitle = character.title ? 'Título/s: ' : ''
   return (
     <div className="character-item bg-amber-200 p-6 rounded-lg shadow-md">
-      <h3 className="text-2xl font-semibold mb-2">{character.name} - {character.role}</h3>
+      <h3 className="text-2xl font-semibold mb-2">
+        {character.name} - {character.role}
+      </h3>
       <p className="pb-3">{character.description}</p>
-      <p className="text-sm text-gray-700"><strong>{haveTitle}</strong> {formatTextWithLineBreaks(character.title)}</p>
+      {hasTitle && (
+        <p className="text-sm text-gray-700">
+          <strong>Título/s: </strong>
+          {formatTextWithLineBreaks(character.title)}
+        </p>
+      )}
     </div>
   );
 }
-  
-  export default CharacterItem;
-  
+
+export default CharacterItem;

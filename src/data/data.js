@@ -3,7 +3,7 @@ export const sections = [
     { id: 'history', title: 'Historia', icon: '📜' },
     { id: 'items', title: 'Objetos', icon: '🗡️' },
     { id: 'locations', title: 'Lugares', icon: '🏰' },
-    { id: 'map', title: 'Mapa general', icon: '🗺️' },
+    { id: 'map', title: 'Mapas', icon: '🗺️' },
     { id: 'references', title: 'Material', icon: '📚' },
     { id: 'easterEggs', title: 'ᛋᛖᚲᚱᛖᛏᛟᛋ', icon: '' },
   ];

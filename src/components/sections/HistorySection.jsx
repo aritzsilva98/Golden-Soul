@@ -3,8 +3,8 @@ import { timeline } from '../../data/historyData.js'
 const HistorySection = () => {
   return (
     <section className='history-section pl-4'>
-      {(timeline && timeline.length > 0) ? (
-        <div className = 'bg-amber-50 border-2 border-amber-700 rounded-lg p-6 shadow-lg mb-8'>
+      {timeline?.length > 0 ? (
+        <div className='bg-amber-50 border-2 border-amber-700 rounded-lg p-6 shadow-lg mb-8'>
           <h2 className='text-4xl font-bold mb-4'>Historia</h2>
           <ul className='list-disc pl-6 text-lg'>
             {timeline.map(entry => (
