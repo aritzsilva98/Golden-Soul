@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { sections, runes } from '../data/data'
+import { sections } from '../data/data'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
 import NavBar from './layout/NavBar'
@@ -10,56 +10,13 @@ import ItemsSection from './sections/ItemsSection'
 import LocationsSection from './sections/LocationsSection'
 import ReferencesSection from './sections/ReferencesSection'
 import EasterEggsSection from './sections/EasterEggsSection'
-import MapSection from './sections/MapSection';
-import { Loader } from './shared/decorations/loader/loader'
+import MapSection from './sections/MapSection'
+import Loader from '../utils/Loader'
+import useParticles from '../utils/hooks/useParticles'
 
-
-function Main () {
+const Main = () => {
   const [activeSection, setActiveSection] = useState('characters')
-  const [particles, setParticles] = useState([])
-  const [floatingRunes, setFloatingRunes] = useState([])
-
-  useEffect(() => {
-    const createParticles = () => {
-      const newParticles = []
-      for (let i = 0; i < 50; i++) {
-        newParticles.push({
-          id: i,
-          x: Math.random() * window.innerWidth,
-          y: Math.random() * window.innerHeight,
-          size: Math.random() * 4 + 1
-        })
-      }
-      setParticles(newParticles)
-    }
-
-    const createFloatingRunes = () => {
-      const newRunes = []
-      for (let i = 0; i < 20; i++) {
-        newRunes.push({
-          id: i,
-          rune: runes[Math.floor(Math.random() * runes.length)],
-          x: Math.random() * window.innerWidth,
-          y: Math.random() * window.innerHeight,
-          size: Math.random() * 24 + 16,
-          rotation: Math.random() * 360
-        })
-      }
-      setFloatingRunes(newRunes)
-    }
-
-    createParticles()
-    createFloatingRunes()
-    window.addEventListener('resize', createParticles)
-    window.addEventListener('resize', createFloatingRunes)
-
-    return () => {
-      window.removeEventListener('resize', createParticles)
-      window.removeEventListener('resize', createFloatingRunes)
-    }
-  }, [])
-
-  const validSections = sections.map(section => section.id)
+  const { particles, floatingRunes } = useParticles()
 
   return (
     <div className='h-screen bg-amber-100 text-amber-900 font-serif overflow-hidden relative'>
@@ -95,7 +52,7 @@ function Main () {
         ))}
         {floatingRunes.map(runeObj => (
           <motion.div
-            key={runeObj.id}
+            key={runeObj.id} // Asegúrate de que el ID sea único
             className='absolute text-amber-700 opacity-30'
             style={{
               fontSize: runeObj.size,
@@ -151,13 +108,13 @@ function Main () {
               {activeSection === 'references' && <ReferencesSection />}
               {activeSection === 'easterEggs' && <EasterEggsSection />}
               {activeSection === 'map' && <MapSection />}
-              
-              {!validSections.includes(activeSection) && <Loader />}
+              {activeSection === 'invalid' && <Loader />}
             </motion.div>
           </AnimatePresence>
         </main>
         <Footer />
       </div>
+
       {/* Corners */}
       <div className='fixed top-0 left-0 w-16 h-16 border-t-4 border-l-4 border-amber-800 animate-pulse'></div>
       <div className='fixed top-0 right-0 w-16 h-16 border-t-4 border-r-4 border-amber-800 animate-pulse'></div>

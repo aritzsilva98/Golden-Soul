@@ -1,4 +1,4 @@
-import { runes } from '../../../../data/data'
+import { runes } from '../../../data/data'
 
 const RuneDivisor = () => {
   return (

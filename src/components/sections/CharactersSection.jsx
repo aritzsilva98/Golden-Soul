@@ -1,6 +1,6 @@
 import CharacterItem from '../shared/CharacterItem'
 import { characters, myCharacters } from '../../data/charactersData'
-import RunesDivisor from '../shared/decorations/runesDivisor/runesDivisor'
+import RunesDivisor from '../shared/decorations/runesDivisor'
 
 const CharactersSection = () => {
   const hasMyCharacters = myCharacters && myCharacters.length > 0;
@@ -12,8 +12,8 @@ const CharactersSection = () => {
         <div className='bg-amber-50 border-2 border-amber-700 rounded-lg p-6 shadow-lg mb-8'>
           <h2 className='text-4xl font-bold mb-4'>Personajes Jugadores</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 pb-4'>
-            {myCharacters.map(character => (
-              <CharacterItem key={character.name} character={character} />
+            {myCharacters.map((character, index) => (
+              <CharacterItem key={character.id || `${character.name}-${index}`} character={character} />
             ))}
           </div>
         </div>
@@ -25,8 +25,8 @@ const CharactersSection = () => {
         <div className='bg-amber-50 border-2 border-amber-700 rounded-lg p-6 shadow-lg mb-8'>
           <h2 className='text-4xl font-bold mb-4'>Personajes No Jugadores</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 pb-4'>
-            {characters.map(character => (
-              <CharacterItem key={character.name} character={character} />
+            {characters.map((character, index) => (
+              <CharacterItem key={character.id || `${character.name}-${index}`} character={character} />
             ))}
           </div>
         </div>
@@ -39,4 +39,4 @@ const CharactersSection = () => {
   )
 }
 
-export default CharactersSection
+export default CharactersSection;

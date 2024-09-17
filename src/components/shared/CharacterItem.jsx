@@ -1,7 +1,7 @@
 import { formatTextWithLineBreaks } from '../../utils/textUtils'
 
 const CharacterItem = ({ character }) => {
-  const hasTitle = Boolean(character.title); // Evaluar si el personaje tiene título
+  const hasTitle = Boolean(character.title);
 
   return (
     <div className="character-item bg-amber-200 p-6 rounded-lg shadow-md">
