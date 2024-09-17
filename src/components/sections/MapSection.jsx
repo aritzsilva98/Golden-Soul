@@ -1,5 +1,5 @@
 function MapSection () {
-  const mapImage = '../../utils/images/map.png' || null
+  const mapImage = '/images/provisionalMap.png'
 
   return (
     <section className='bg-amber-50 border-2 border-amber-700 rounded-lg p-6 shadow-lg mb-8'>
@@ -9,7 +9,7 @@ function MapSection () {
           <div className='relative'>
             <img
               src={mapImage}
-              alt='Mapa de la campaña'
+              alt='Mapa actual de la campaña'
               className='w-full h-auto rounded-lg shadow-lg'
             />
           </div>
