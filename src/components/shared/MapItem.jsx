@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Loading from '../../utils/Loader';
 
-const MapItem = ({ imageSrc, altText }) => {
+const MapItem = ({ imageSrc, altText, title }) => {
   const [loading, setLoading] = useState(true);
 
   const handleImageLoad = () => {
@@ -11,6 +11,7 @@ const MapItem = ({ imageSrc, altText }) => {
   return (
     <div className='relative'>
       {loading && <Loading />}
+      <p className='text-center pt-10 pb-4 text-3xl font-bold text-orange-400'>{title}</p>
       <img
         src={imageSrc}
         alt={altText}
