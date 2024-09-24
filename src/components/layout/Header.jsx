@@ -8,8 +8,8 @@ const Header = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <h1 className="text-5xl font-bold mb-4 text-amber-800">Alma Dorada</h1>
-      <p className="text-2xl italic">Una campaña de The Witcher TTRPG</p>
+      <h1 className=" text-2xl font-bold mb-4 text-amber-800 sm:text-2xl md:text-3xl lg:text-4xl">Alma Dorada</h1>
+      <p className="text-sm italic sm:text-md md:text-lg lg:text-xl">Una campaña de The Witcher TTRPG</p>
     </motion.header>
   );
 }

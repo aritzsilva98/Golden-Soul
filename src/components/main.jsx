@@ -52,7 +52,7 @@ const Main = () => {
         ))}
         {floatingRunes.map(runeObj => (
           <motion.div
-            key={runeObj.id} // Asegúrate de que el ID sea único
+            key={runeObj.id}
             className='absolute text-amber-700 opacity-30'
             style={{
               fontSize: runeObj.size,
