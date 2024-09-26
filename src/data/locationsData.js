@@ -10,7 +10,7 @@ export const locations = [
   {
     name: "Sha'rya, la ciudad dorada",
     description:
-      'La capital del ducado de XXX, el más abierto al comercio exterior y el más expuesto geográficamente de todo Ofir, es un vibrante crisol de culturas. Sus coloridos barrios pobres se extienden entre bulliciosas calles comerciales, llenas de vida y de mercaderes de tierras lejanas. A lo lejos, se alzan majestuosas torres y castillos, con imponentes muros y techos dorados que brillan bajo el sol, simbolizando la riqueza y el poder de la ciudad. Esta capital es un punto de encuentro entre lo humilde y lo grandioso, donde el comercio internacional y la ostentación coexisten.',
+      'La capital del ducado de Al\'Thirel, el más abierto al comercio exterior y el más expuesto geográficamente de todo Ofir, es un vibrante crisol de culturas. Sus coloridos barrios pobres se extienden entre bulliciosas calles comerciales, llenas de vida y de mercaderes de tierras lejanas. A lo lejos, se alzan majestuosas torres y castillos, con imponentes muros y techos dorados que brillan bajo el sol, simbolizando la riqueza y el poder de la ciudad. Esta capital es un punto de encuentro entre lo humilde y lo grandioso, donde el comercio internacional y la ostentación coexisten.',
     history:
       '\nFundada en un perfecto equilibrio entre las extravagantes arquitecturas ofir y nilfgaardiana.\nSu larga construcción se dio por finalizada hace unos 312 años.',
     importantFigures: ''
